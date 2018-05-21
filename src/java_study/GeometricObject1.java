@@ -1,6 +1,6 @@
 package java_study;
 
-public class GeometricObject1 {
+public abstract class GeometricObject1 {
     protected String color;
     private boolean filled;
     private java.util.Date createDate;
@@ -38,4 +38,8 @@ public class GeometricObject1 {
     public String toString(){
         return  "created on " + createDate + "\ncolor: " + color + "and filled: " + filled;
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 }
